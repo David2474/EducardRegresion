@@ -4,3 +4,4 @@ joblib
 matplotlib
 numpy
 pydantic
+scikit-learn
