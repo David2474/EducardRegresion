@@ -16,7 +16,7 @@ if not os.path.exists(model_path):
 
 model = joblib.load(model_path)
 
-@app.post("/bosque")
+@app.post("/")
 def predict(data: InputData):
     prediction = model.predict([data.answers])[0]
     probs = model.predict_proba([data.answers])[0]
